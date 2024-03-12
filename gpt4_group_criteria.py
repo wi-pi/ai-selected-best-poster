@@ -105,11 +105,16 @@ total_scores = 0
 #     pbar.set_description(f'Processing criteria {cr}')
 for cr in criteria:
     try:
-        head_prompt=f"Rate the attached technical poster on a scale of 0-2 based on {cr}. The guidelines for the scores are:"
+        print("Yes")
+        head_prompt=f"Rate the attached technical poster on a scale of 0-4 based on the criteria '{cr}'. The guidelines for the scores are:"
         guidelines=criteria[cr]
-        tail_prompt=f"I want the output in a JSON format with the keys 'score' and 'explanation'"
+        tail_prompt=f"""
+        If you think a poster's performance is between 3-4, choose 4 if it closely meets the guidelines and 3 if it's closer to the next lower level.
+        Similarly, for a performance between 1-2, choose 2 if it's close to meeting the guidelines and 1 if it's nearer to the lower level.
+        I want the output in a JSON format with the keys 'score' and 'explanation'"""
         prompt=f"{head_prompt}\n{guidelines}\n{tail_prompt}"
         response=get_completion(prompt=prompt, base64_image=encode_image(args.image_path))
+        print("Response received!!")
         # response_json=json.loads(response.json())
         response_json=response.json()
         output_dict=response_json['choices'][0]['message']['content']
@@ -129,4 +134,4 @@ for cr in criteria:
     
     write_to_json(parsed_json,f'{result_base_dir}/{cr}_score_with_explanation.json')
 
-print(f"Total Score: {total_scores} of 14.")
+print(f"Total Score: {total_scores} of 28.")

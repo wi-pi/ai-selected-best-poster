@@ -1,37 +1,37 @@
 {
     "Organization": {
-      "2": "Navigation is explicitly indicated with numbers or visual guides.",
-      "1": "Navigation is implicit (e.g., headings and blocks of text imply organization).",
+      "3-4": "Navigation is explicitly indicated with numbers or visual guides.",
+      "1-2": "Navigation is implicit (e.g., headings and blocks of text imply organization).",
       "0": "It is not at all clear how I should move through information on the poster."
     },
     "Graphics": {
-      "2": "Graphics are clear from 3-5 feet away. Color is used to highlight important points or to convey quantitative information. Visual anchors guide and help orient viewer to content.",
-      "1": "Graphics can be seen but not understood from 3-5 feet away. Colors distract the viewer or do not aid in comprehension. No use of visual anchors to orient the viewer to the content.",
+      "3-4": "Graphics are clear from 3-5 feet away. Color is used to highlight important points or to convey quantitative information. Visual anchors guide and help orient viewer to content.",
+      "1-2": "Graphics can be seen but not understood from 3-5 feet away. Colors distract the viewer or do not aid in comprehension. No use of visual anchors to orient the viewer to the content.",
       "0": "Graphics are not distinguishable from text. Too much or too little color creates confusion. Graphics underused."
     },
     "Data_Visualization": {
-      "2": "Charts and graphs communicate the major results and implications. Axes are clearly labeled. Color and/or visual cues are used to highlight important data points.",
-      "1": "Data are presented in charts and graphs but the figures do not clearly communicate the results. No visual cues to draw attention to a big result.",
+      "3-4": "Charts and graphs communicate the major results and implications. Axes are clearly labeled. Color and/or visual cues are used to highlight important data points.",
+      "1-2": "Data are presented in charts and graphs but the figures do not clearly communicate the results. No visual cues to draw attention to a big result.",
       "0": "No data presented or raw data presented without interpretation. The viewer must spend time to interpret data before they can understand the poster."
     },
     "Text": {
-      "2": "Title and major headings are legible from 3-5 feet away. Explanatory text is associated with each graphic. 30% to 50% of the poster content is comprised of text.",
-      "1": "Titles and major headings are legible from 3-5 feet away but the poster is comprised of < 30% or >50% text. Explanatory text is not directly adjacent to the graphic described.",
+      "3-4": "Title and major headings are legible from 3-5 feet away. Explanatory text is associated with each graphic. 30% to 50% of the poster content is comprised of text.",
+      "1-2": "Titles and major headings are legible from 3-5 feet away but the poster is comprised of < 30% or >50% text. Explanatory text is not directly adjacent to the graphic described.",
       "0": "Titles and/or major headings are illegible from 3-5 feet away. Poster is comprised of < 30% or > 50% text."
     },
     "White_Space": {
-      "2": "Empty space is organized and large enough to visually organize content segments from 3-5 feet away.",
-      "1": "Empty space is employed but is insufficient to visually organize the content as viewed from 3-5 feet away.",
+      "3-4": "Empty space is organized and large enough to visually organize content segments from 3-5 feet away.",
+      "1-2": "Empty space is employed but is insufficient to visually organize the content as viewed from 3-5 feet away.",
       "0": "Little to no empty space; the poster looks like a mass of text and diagrams. Difficult to navigate from 3-5 feet away."
     },
     "Objectives": {
-      "2": "The study objectives are explicitly stated with the use of a heading.",
-      "1": "The study objectives are present but buried in the background information.",
+      "3-4": "The study objectives are explicitly stated with the use of a heading.",
+      "1-2": "The study objectives are present but buried in the background information.",
       "0": "I could not find the study objectives."
     },
     "Main_Points": {
-      "2": "The main points are clearly labeled and easy to find.",
-      "1": "The main points are present but not obvious and not labeled.",
+      "3-4": "The main points are clearly labeled and easy to find.",
+      "1-2": "The main points are present but not obvious and not labeled.",
       "0": "I could not find the main points."
     }
   }
