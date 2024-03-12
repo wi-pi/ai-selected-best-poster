@@ -105,7 +105,6 @@ total_scores = 0
 #     pbar.set_description(f'Processing criteria {cr}')
 for cr in criteria:
     try:
-        print("Yes")
         head_prompt=f"Rate the attached technical poster on a scale of 0-4 based on the criteria '{cr}'. The guidelines for the scores are:"
         guidelines=criteria[cr]
         tail_prompt=f"""
@@ -114,7 +113,6 @@ for cr in criteria:
         I want the output in a JSON format with the keys 'score' and 'explanation'"""
         prompt=f"{head_prompt}\n{guidelines}\n{tail_prompt}"
         response=get_completion(prompt=prompt, base64_image=encode_image(args.image_path))
-        print("Response received!!")
         # response_json=json.loads(response.json())
         response_json=response.json()
         output_dict=response_json['choices'][0]['message']['content']
