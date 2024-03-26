@@ -137,8 +137,7 @@ for file in os.listdir(args.image_dir):
             # Stripping the Markdown code block delimiters and parse into JSON
             parsed_json = parse_into_json(output_dict)
 
-            print(parsed_json)
-            counter = 1
+            counter = 0
             for cr, item in parsed_json.items():
                 if 'score' in item:
                     score = int(item['score'])
@@ -148,10 +147,9 @@ for file in os.listdir(args.image_dir):
                 if 'explanation' in item:
                     explanation = item['explanation']
                     
-            if counter < len(criteria):
-                print(f"Error: Incomplete criteria, only {counter} of {len(criteria)} criteria were scored.")
+            if counter != len(criteria):
+                print(f"Error: Incorrect criteria count, {counter} of {len(criteria)} criteria were scored.")
                 continue
-            total_score += score
 
             time.sleep(0.1)
             
@@ -162,5 +160,5 @@ for file in os.listdir(args.image_dir):
         average_score=0
         average_score = sum(score / 5 for score in total_scores)
 
-        print(f"Average Score: {average_score} of {4*len(criteria)}")
+        print(f"AVERAGE SCORE for {cleaned_filename}: {average_score} of {4*len(criteria)}")
         write_to_json(parsed_jsons,f"{result_base_dir}/{cleaned_filename}.json")
