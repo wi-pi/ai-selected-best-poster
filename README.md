@@ -20,9 +20,11 @@ The script uses the following criterion outlined in the [Rubric for Scientific P
 
 2. Create a virtual environment using `conda` or `venv`, and install the required Python packages using `pip install -r requirements.txt`.
    
-3. Use the script by running the command `python gpt4_group_criteria.py --image_path "./images/path_to_your_poster_file" --result_base_dir "./output_json_files"`. Replace `./images/path_to_your_poster_file` with the path to the image you want to encode, and `./output_json_files` with the directory where you want to store the output JSON files.
+3. If your files are in pdf format. Use the command `python convert_pdf2img.py --input_dir "path_to_dir_with_pdf_files" --output_dir "path_to_dir_to_store_png"` to convert pdf files to PNG. 
 
-4. (Optional) Use the script by running the command `python gpt4_group_criteria_batch.py --image_dir "path_to_your_poster_files" --result_base_dir "./output_json_files"`. Replace `path_to_your_poster_files` with the path to the poster image folder.
+4. Use the script by running the command `python gpt4_group_criteria.py --image_path "./images/path_to_your_poster_file" --result_base_dir "./output_json_files"`. Replace `./images/path_to_your_poster_file` with the path to the image you want to encode, and `./output_json_files` with the directory where you want to store the output JSON files.
+
+5. (Optional) Use the script by running the command `python gpt4_group_criteria_batch.py --image_dir "path_to_your_poster_files" --result_base_dir "./output_json_files"`. Replace `path_to_your_poster_files` with the path to the poster image folder.
 
 ## Functions
 
