@@ -1,6 +1,6 @@
 #  The AI-selected “best” poster award
 
-This script, `gpt4_group_criteria.py`, is a Python script that uses OpenAI's GPT-4V model to perform certain tasks. The script requires an OpenAI API key to function.
+This script, `gpt4_group_criteria.py`, is a Python script that uses Google's Gemini 3.1 Pro model to perform certain tasks. The script requires a Gemini API key (`GEMINI_API_KEY`) to function.
 
 ## Grading Criterion
 
@@ -16,7 +16,7 @@ The script uses the following criterion outlined in the [Rubric for Scientific P
 
 ## How to Use
 
-1. Ensure you have a `.env` file in your project root with your OpenAI API key. The key should be stored as `OPENAI_API_KEY=your_api_key_here`.
+1. Ensure you have a `.env` file in your project root with your Gemini API key. The key should be stored as `GEMINI_API_KEY=your_api_key_here`.
 
 2. Create a virtual environment using `conda` or `venv`, and install the required Python packages using `pip install -r requirements.txt`.
    
